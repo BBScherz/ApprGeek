@@ -10,7 +10,7 @@ namespace ApprGeek
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            MainPage = new NavigationPage(new ApprGeek.MainPage());
         }
 
         protected override void OnStart()

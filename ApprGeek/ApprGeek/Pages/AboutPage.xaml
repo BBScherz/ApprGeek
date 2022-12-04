@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ApprGeek.Pages.AboutPage">
+    <ContentPage.Content>
+        <StackLayout>
+            
+            <Label Text="Tell us about yourself!" Padding="30" TextColor="Black" HorizontalTextAlignment="Start" FontSize="24" FontAttributes="Bold"/>
+
+
+            <Frame BorderColor="Gray" Grid.Column="0">
+                <Entry x:Name="Abt" Placeholder="Express yourself here!" PlaceholderColor="gray" FontSize="12"/>
+            </Frame>
+
+
+            <Button x:Name="aupdate" Text="Update" BackgroundColor="black" TextColor="White"/>
+            
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
