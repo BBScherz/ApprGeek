@@ -5,32 +5,40 @@
 
     <StackLayout>
 
-        <Frame Padding="30" BorderColor="Transparent" BackgroundColor="Transparent">
-            <Label Text="Edit Profile" HorizontalTextAlignment="Center" TextColor="CornflowerBlue" FontSize="24" FontAttributes="Bold"/>
-        </Frame>
+        <StackLayout>
+            
+            <Frame Padding="30" BorderColor="Transparent" BackgroundColor="Transparent">
+                <Label Text="Edit Profile" HorizontalTextAlignment="Center" TextColor="CornflowerBlue" FontSize="24" FontAttributes="Bold"/>
+            </Frame>
+
+            <Frame CornerRadius="100" BorderColor="CornflowerBlue" HeightRequest="175" WidthRequest="175" Padding="0" IsClippedToBounds="True" HorizontalOptions="Center">
+                <Image Source="sample.jpg" HorizontalOptions="Center" VerticalOptions="Center"/>
+            </Frame>
+            
+        </StackLayout>
 
         <StackLayout BackgroundColor="Transparent">
             
             <Button x:Name="name" Text="Name" HorizontalOptions="Start" BackgroundColor="Transparent" TextColor="Gray"/>
-            <Label x:Name="namelabel" HorizontalTextAlignment="Start" TextColor="Gray"/>
+            <Label x:Name="namelabel" HorizontalTextAlignment="Start" TextColor="Black" FontAttributes="Bold" Margin="0, 0, 20, 20"/>
         </StackLayout>
-        
+
         <StackLayout  BackgroundColor="Transparent">
        
             <Button x:Name="phone" Text="Phone" HorizontalOptions="Start" BackgroundColor="Transparent" TextColor="Gray"/>
-            <Label x:Name="phonelabel" HorizontalTextAlignment="Start" TextColor="Gray"/>
+            <Label x:Name="phonelabel" HorizontalTextAlignment="Start" TextColor="Black" FontAttributes="Bold" Margin="0, 0, 20, 20"/>
         </StackLayout>
 
         <StackLayout BackgroundColor="Transparent">
             
             <Button x:Name="email" Text="Email" HorizontalOptions="Start" BackgroundColor="Transparent" TextColor="Gray"/>
-            <Label x:Name="emaillabel" HorizontalTextAlignment="Start" TextColor="Gray"/>
+            <Label x:Name="emaillabel" HorizontalTextAlignment="Start" TextColor="Black" FontAttributes="Bold" Margin="0, 0, 20, 20"/>
         </StackLayout>
 
         <StackLayout  BackgroundColor="Transparent">
             
             <Button x:Name="about" Text="Tell us about yourself" HorizontalOptions="Start" BackgroundColor="Transparent" TextColor="Gray"/>
-            <Label x:Name="aboutlabel" HorizontalTextAlignment="Start" TextColor="Gray"/>
+            <Label x:Name="aboutlabel" HorizontalTextAlignment="Start" TextColor="Black" FontAttributes="Bold" Margin="0, 0, 20, 20"/>
         </StackLayout>
 
 

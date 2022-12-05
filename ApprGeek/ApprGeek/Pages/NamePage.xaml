@@ -7,16 +7,21 @@
 
             <Label Text="What's your name?" Padding="30" TextColor="Black" HorizontalTextAlignment="Start" FontSize="24" FontAttributes="Bold"/>
 
-            <Frame BorderColor="Gray" Grid.Column="0">
-                <Entry x:Name="Fname" Placeholder="First name" PlaceholderColor="gray" FontSize="12"/>
-            </Frame>
+            
+            <StackLayout Margin="10" Spacing="30" Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
 
-            <Frame BorderColor="Gray" Grid.Column="1">
-                <Entry x:Name="Lname" Placeholder="Last name" PlaceholderColor="gray" FontSize="12"/>
-            </Frame>
+                <Frame BorderColor="Gray" Grid.Column="0">
+                    <Entry x:Name="Fname" Placeholder="First name" WidthRequest="120" PlaceholderColor="gray" FontSize="12"/>
+                </Frame>
+
+                <Frame BorderColor="Gray" Grid.Column="1">
+                    <Entry x:Name="Lname" Placeholder="Last name" WidthRequest="120" PlaceholderColor="gray" FontSize="12"/>
+                </Frame>
+
+            </StackLayout>
 
 
-            <Button x:Name="nupdate" Text="Update" Clicked="UpdateNameClicked" BackgroundColor="black" TextColor="White"/>
+            <Button x:Name="nupdate" Text="Update" Clicked="UpdateNameClicked" Margin="20" BackgroundColor="black" TextColor="White"/>
 
         </StackLayout>
     </ContentPage.Content>

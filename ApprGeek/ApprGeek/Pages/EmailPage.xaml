@@ -8,12 +8,12 @@
             <Label Text="What's your email?" Padding="30" TextColor="Black" HorizontalTextAlignment="Start" FontSize="24" FontAttributes="Bold"/>
 
 
-            <Frame BorderColor="Gray" Grid.Column="0">
+            <Frame BorderColor="Gray" Grid.Column="0" Margin="20">
                 <Entry x:Name="Eml" Placeholder="Your email address" PlaceholderColor="gray" FontSize="12"/>
             </Frame>
 
 
-            <Button x:Name="eupdate" Text="Update" Clicked="UpdateEmailClicked" BackgroundColor="black" TextColor="White"/>
+            <Button x:Name="eupdate" Text="Update" Clicked="UpdateEmailClicked" Margin="20" BackgroundColor="black" TextColor="White"/>
             
         </StackLayout>
     </ContentPage.Content>

@@ -8,12 +8,12 @@
             <Label Text="Tell us about yourself!" Padding="30" TextColor="Black" HorizontalTextAlignment="Start" FontSize="24" FontAttributes="Bold"/>
 
 
-            <Frame BorderColor="Gray" Grid.Column="0">
+            <Frame BorderColor="Gray" Grid.Column="0" Margin="20">
                 <Entry x:Name="Abt" Placeholder="Express yourself here!" PlaceholderColor="gray" FontSize="12"/>
             </Frame>
 
 
-            <Button x:Name="aupdate" Text="Update" Clicked="UpdateAboutClicked" BackgroundColor="black" TextColor="White"/>
+            <Button x:Name="aupdate" Text="Update" Clicked="UpdateAboutClicked" Margin="20" BackgroundColor="black" TextColor="White"/>
             
         </StackLayout>
     </ContentPage.Content>
