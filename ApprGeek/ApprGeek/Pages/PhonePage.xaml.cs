@@ -17,8 +17,16 @@ namespace ApprGeek.Pages
 			InitializeComponent ();
 
 			Pnum.Keyboard = Keyboard.Telephone;
-
-            
         }
-	}
+
+        async void UpdatePhoneClicked(object sender, EventArgs e)
+        {
+            string num = Pnum.Text;
+            string formatted = "(" + num.Substring(0,3) + ")" + num.Substring(3,3) + "-" + num.Substring(6);
+            
+            MessagingCenter.Send<App, string>(App.Current as App, "Phone", formatted);
+
+            await Navigation.PopAsync();
+        }
+    }
 }

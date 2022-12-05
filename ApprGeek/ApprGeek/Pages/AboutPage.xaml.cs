@@ -16,7 +16,16 @@ namespace ApprGeek.Pages
 		{
 			InitializeComponent ();
 
-            
         }
-	}
+
+        async void UpdateAboutClicked(object sender, EventArgs e)
+        {
+            string bio = Abt.Text;
+
+            MessagingCenter.Send<App, string>(App.Current as App, "Bio", bio);
+
+            await Navigation.PopAsync();
+        }
+
+    }
 }

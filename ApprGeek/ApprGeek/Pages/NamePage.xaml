@@ -16,7 +16,7 @@
             </Frame>
 
 
-            <Button x:Name="nupdate" Text="Update" Clicked="OnUpdateClicked" BackgroundColor="black" TextColor="White"/>
+            <Button x:Name="nupdate" Text="Update" Clicked="UpdateNameClicked" BackgroundColor="black" TextColor="White"/>
 
         </StackLayout>
     </ContentPage.Content>

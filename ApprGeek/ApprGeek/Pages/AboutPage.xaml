@@ -13,7 +13,7 @@
             </Frame>
 
 
-            <Button x:Name="aupdate" Text="Update" BackgroundColor="black" TextColor="White"/>
+            <Button x:Name="aupdate" Text="Update" Clicked="UpdateAboutClicked" BackgroundColor="black" TextColor="White"/>
             
         </StackLayout>
     </ContentPage.Content>

@@ -17,7 +17,15 @@ namespace ApprGeek.Pages
 			InitializeComponent ();
 
 			Eml.Keyboard = Keyboard.Email;
-
         }
-	}
+
+        async void UpdateEmailClicked(object sender, EventArgs e)
+        {
+            string email = Eml.Text;
+
+            MessagingCenter.Send<App, string>(App.Current as App, "Email", email);
+
+            await Navigation.PopAsync();
+        }
+    }
 }

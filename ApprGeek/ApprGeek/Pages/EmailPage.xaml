@@ -13,7 +13,7 @@
             </Frame>
 
 
-            <Button x:Name="eupdate" Text="Update" BackgroundColor="black" TextColor="White"/>
+            <Button x:Name="eupdate" Text="Update" Clicked="UpdateEmailClicked" BackgroundColor="black" TextColor="White"/>
             
         </StackLayout>
     </ContentPage.Content>

@@ -17,10 +17,11 @@ namespace ApprGeek.Pages
 			InitializeComponent ();
 		}
 
-		async void OnUpdateClicked (object sender, EventArgs e)
+		async void UpdateNameClicked (object sender, EventArgs e)
 		{
-			var fullname = Fname.Text + Lname.Text;
-			
+
+			string msg = Fname.Text + " " + Lname.Text;
+			MessagingCenter.Send<App, string>(App.Current as App, "Name", msg);
 			
 			await Navigation.PopAsync();
 		}

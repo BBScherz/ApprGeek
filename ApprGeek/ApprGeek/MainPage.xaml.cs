@@ -16,6 +16,27 @@ namespace ApprGeek
         {
             InitializeComponent();
 
+            MessagingCenter.Subscribe<App, string>(App.Current, "Name", (snd,arg) =>
+            {
+                namelabel.Text = arg;
+            });
+
+            MessagingCenter.Subscribe<App, string>(App.Current, "Phone", (snd, arg) =>
+            {
+                phonelabel.Text = arg;
+            });
+
+            MessagingCenter.Subscribe<App, string>(App.Current, "Email", (snd, arg) =>
+            {
+                emaillabel.Text = arg;
+            });
+
+            MessagingCenter.Subscribe<App, string>(App.Current, "Bio", (snd, arg) =>
+            {
+                aboutlabel.Text = arg;
+            });
+
+
             name.Clicked += (s, e) => Navigation.PushAsync(new NamePage());
             phone.Clicked += (s, e) => Navigation.PushAsync(new PhonePage());
             email.Clicked += (s, e) => Navigation.PushAsync(new EmailPage());
