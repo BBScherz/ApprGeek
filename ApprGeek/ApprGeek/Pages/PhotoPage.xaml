@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ApprGeek.Pages.PhotoPage">
+    <ContentPage.Content>
+        <StackLayout>
+
+            <Label Text="Upload a photo of yourself" Padding="30" TextColor="Black" HorizontalTextAlignment="Start" FontSize="24" FontAttributes="Bold"/>
+
+            <Picker x:Name="photopicker" Title="Select an image" Margin="20" >
+
+                <Picker.ItemsSource>
+
+                    <x:Array Type="{x:Type x:String}">
+                        <x:String>sample</x:String>
+                        <x:String>Alternate</x:String>
+                    </x:Array>
+                </Picker.ItemsSource>
+            </Picker>
+
+            <Button x:Name="pupdate" Text="Update" Clicked="UpdatePhotoClicked" Margin="20" BackgroundColor="black" TextColor="White"/>
+            
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

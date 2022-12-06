@@ -10,20 +10,20 @@ using Xamarin.Forms.Xaml;
 namespace ApprGeek.Pages
 {
 	[XamlCompilation(XamlCompilationOptions.Compile)]
-	public partial class NamePage : ContentPage
+	public partial class PhotoPage : ContentPage
 	{
-		public NamePage ()
+		public PhotoPage ()
 		{
 			InitializeComponent ();
-        }
+		}
 
-		async void UpdateNameClicked (object sender, EventArgs e)
-		{
-			
-			string msg = Fname.Text + " " + Lname.Text;
-			MessagingCenter.Send<App, string>(App.Current as App, "Name", msg);
+        async void UpdatePhotoClicked(object sender, EventArgs e)
+        {
+            string selected = (string)photopicker.SelectedItem;
+
+            MessagingCenter.Send<App, string>(App.Current as App, "Photo", selected);
 
             await Navigation.PopAsync();
-		}
-	}
+        }
+    }
 }

@@ -22,11 +22,20 @@ namespace ApprGeek.Pages
         async void UpdatePhoneClicked(object sender, EventArgs e)
         {
             string num = Pnum.Text;
-            string formatted = "(" + num.Substring(0,3) + ")" + num.Substring(3,3) + "-" + num.Substring(6);
-            
-            MessagingCenter.Send<App, string>(App.Current as App, "Phone", formatted);
 
-            await Navigation.PopAsync();
+            try{
+                string formatted = "(" + num.Substring(0, 3) + ")" + num.Substring(3, 3) + "-" + num.Substring(6);
+
+                MessagingCenter.Send<App, string>(App.Current as App, "Phone", formatted);
+                await Navigation.PopAsync();
+            }
+            catch(Exception ex)
+            {
+                await DisplayAlert("Invalid number", "Your phone number has an invalid format. Try again.", "Ok");
+            }
+            
+
+            
         }
     }
 }
