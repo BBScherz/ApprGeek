@@ -16,6 +16,7 @@ namespace ApprGeek
         {
             InitializeComponent();
 
+            /*Data capture from the other pages*/
             MessagingCenter.Subscribe<App, string>(App.Current, "Photo", (snd, arg) =>
             {
                 Pfp.Source = arg + ".jpg";
@@ -41,6 +42,7 @@ namespace ApprGeek
                 aboutlabel.Text = arg;
             });
 
+            /*Routing to each page*/
             Pfp.Clicked += (s, e) => Navigation.PushAsync(new PhotoPage());
             name.Clicked += (s, e) => Navigation.PushAsync(new NamePage());
             phone.Clicked += (s, e) => Navigation.PushAsync(new PhonePage());
